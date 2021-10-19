@@ -11,16 +11,16 @@ class PenggunaSeeder extends Seeder
     {
         $data = [
             [
-                'nama' => 'owner',
+                'nama' => 'DANY ALHADY',
+            'password' => md5('12200879')
+            ],
+            [
+                'nama' => 'admin',
             'password' => md5('12345')
             ],
             [
-                'nama' => 'creator',
-            'password' => md5('23456')
-            ],
-            [
-                'nama' => 'marketing',
-            'password' => md5('34567')
+                'nama' => '12200879',
+            'password' => md5('DANY ALHADY')
             ]
         ];
         $p = new Pengguna();
