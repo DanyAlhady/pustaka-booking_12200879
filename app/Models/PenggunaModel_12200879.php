@@ -4,7 +4,7 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class Pengguna extends Model
+class PenggunaModel_12200879 extends Model
 {
     protected $DBGroup              = 'koneksiku';
     protected $table                = 'pengguna_12200879';
@@ -14,6 +14,15 @@ class Pengguna extends Model
     protected $protectFields        = true;
     protected $allowedFields        = ['nama', 'password'];
 
+/**
+ * method untuk cek login dari tabel pengguna
+ * berdasarkan nama dan password
+ * @var String $user
+ * @var String pass
+ */
+public function cekLogin($user, $pass){
+    return $this->where('nama', $user)
+                ->where('password', md5($pass))->first();
+    }
     
-
 }

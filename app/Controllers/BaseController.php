@@ -38,7 +38,7 @@ class BaseController extends Controller
      */
     protected $helpers = [];
     /**
-     * @var Session.
+     * @var Session
      */
     protected $session;
 
