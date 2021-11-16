@@ -14,7 +14,8 @@ class SelamatDatang extends BaseController {
             'vd' => $this->session->getFlashdata('validator'),
             'Email' => $this->session->get('Email'),
             'Sandi' => $this->session->get('Sandi'),
-            'Error' => $this->session->getFlashdata('Error')
+            'Error' => $this->session->getFlashdata('Error'),
+            'title' => 'Login sisfo Perpustakaan'
         ]);
     }
 
